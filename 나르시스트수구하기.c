@@ -7,7 +7,7 @@ int main(){
 		j = i;
 		while(j>0){
 			j /= 10;
-  		cnt++;
+  				cnt++;
 		}
 
 		sum = 0;
