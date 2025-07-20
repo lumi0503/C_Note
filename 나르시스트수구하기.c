@@ -1,6 +1,5 @@
 #include <stdio.h>
 #define SIZE 10000
-
 int main(){
 	int i, j, k, cnt, tmp, sum, n, digit;
 	for(i=1; i<SIZE; i++){
@@ -13,7 +12,6 @@ int main(){
 
 		sum = 0;
 		n = i;
-		
 		for(k=0; k<cnt; k++){
 			tmp = 1;
 			digit = n % 10;
@@ -21,12 +19,14 @@ int main(){
 				tmp *= digit;
 			}
 			sum += tmp;
-			j /= 10;
+			n /= 10;
 		}
 		
 		if(sum==i){
 			printf("%d\n", i);
 		}
+		
+		
 	}
 	return 0;
 }
